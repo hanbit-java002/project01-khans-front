@@ -1,0 +1,388 @@
+@import 'lib/include.all.less';
+
+
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+* {
+	font-family: 'Spoqa Han Sans', sans-serif;
+}
+
+html {
+	color: #404040;
+	font-size: 1em;
+	line-height: 1.5;
+}
+
+html, body {
+	height: 100%;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.wz-container {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+}
+
+.menu-layer {
+	display: none;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 137px;
+	background-color: black;
+	opacity: 0.5;
+}
+.menu-list-box {
+	display: none;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+
+.menu-list-inner {
+	position: relative;
+	width: 30%;
+	padding: 18px 0px;
+	@margin-auto-width();
+}
+
+.menu-list {
+	display: inline-block;
+	width: 33.3%;
+	padding: 0px 30px;
+	color: white;
+	font-size: 12px;
+}
+
+.menu-list.operation {
+	position: absolute;
+	top: 18px;
+}
+
+.menu-title {
+	font-weight: bold;
+	padding-bottom: 12px;
+}
+
+.menu-btn>ul>li {
+	line-height: 1.5;
+	padding-bottom: 6px;
+	cursor: pointer;
+}
+
+.wz-contents {
+	position: relative;
+	padding-top: 54px;
+	padding-bottom: 137px;
+}
+
+#main-bar {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 54px;
+	background-color: #fff;
+	z-index: 10;
+	border-bottom: solid 1px #ddd;
+
+}
+
+#header-box{
+	width: 1200px;
+	padding: 0px 10px;
+	@margin-auto-width();
+}
+
+#main-logo {
+	width: 33%;
+	line-height: 54px;
+	color: @main-color;
+	font-size: 20px;
+	font-weight: bold;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#main-menu {
+	display: inline-block;
+	width: 33%;
+	text-align: center;
+}
+
+#main-menu>ul>li {
+	display:inline-block;
+	padding-right: 80px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #444;
+	line-height: 54px;
+	cursor: pointer;
+}
+#main-menu>ul>li:last-child {
+	padding-right: 0px;
+}
+
+#menu-more>i {
+	font-size: 8px;
+	margin-left: 3px;
+	vertical-align: center;
+}
+
+#sign-info {
+	display: inline-block;
+	width: 33%;
+	text-align: right;
+}
+
+#sign-info>ul>li {
+	display: inline-block;
+	padding-left: 25px;
+	font-size: 12px;
+	font-weight: bold;
+	color: @main-color;
+	line-height: 54px;
+}
+
+#sign-info>ul>li:first-child {
+	padding-left: 0px;
+	color: #444
+}
+
+#main-top {
+	width:100%;
+	height: 422px;
+	margin-top: 54px;
+	background-image: url(../img/main_top.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-x: 50%;
+	background-position-x: 50%;
+}
+
+#main-top-body {
+	text-align: center;
+	color: #fff;
+}
+
+#main-text {
+	font-size: 35px;
+	font-weight: bold;
+	padding: 90px 10px 15px 10px;
+}
+
+#main-desc {
+	font-size: 23px;
+	line-height: 170%;
+	padding: 15px 10px 30px 10px;
+}
+
+#main-search-box {
+	position: relative;
+	width: 20%;
+	height: 42px;
+	@margin-auto-width();
+}
+
+#main-search:focus {
+	outline: none;
+}
+
+#main-search-box>i.fa-search {
+	font-size: 14px;
+}
+
+#main-search-btn {
+	width: 65%;
+	height:100%;
+	padding: 10px 15px;
+	background-color: @main-color;
+	font-size: 14px;
+	border: 0px;
+}
+
+.menu-contents {
+	width: 100%;
+	height: 100%;
+	padding: 36px 0px;
+}
+
+.menu-contents.about {
+	width: 100%;
+	height: 100%;
+	padding: 0px 0px;
+}
+
+.menu-inner {
+	max-width: 1200px;
+	height:  100%;
+	padding: 0px 12px;
+	@margin-auto-width();
+}
+
+.menu-box{
+	width: 100%;
+	height: 100%;
+}
+
+.page-left, .page-right {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0px 12px;
+}
+
+.page-left{
+	width: 882px;
+	height: 100%;
+}
+
+.page-right {
+	width: 294px;
+	height: 137px;
+	padding: 0px 12px;
+}
+
+.house-search-box {
+	height: 100%;
+	border: 1px solid #eee;
+	padding: 24px;
+	color: #808080;
+	text-align: center;
+}
+
+.house-search-box-subtitle {
+	font-size: 12px;
+	line-height: 1.8;
+}
+
+.house-search-box-title{
+	font-size: 13px;
+	font-weight: bold;
+	padding-bottom: 12px;
+}
+
+#house-search-btn {
+	width: 180px;
+	height: 36px;
+	@margin-auto-width();
+	background-color: @main-color;
+	font-size: 13px;
+	color: #ffffff;
+	border: 0px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height:137px;
+	background-color: #333;
+}
+
+.footer-wrap {
+	width: 1200px;
+	height: 100%;
+	@margin-auto-width();
+	padding: 18px 36px 18px 36px;
+}
+
+#footer-box-left{
+	float: left;
+	width: 70%;
+	height: 100%;
+}
+
+#footer-company {
+	position: relative;
+}
+
+#footer-company>div {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#footer-logo {
+	width:143px;
+	height:24px;
+	font-size: 20px;
+	color: #fff;
+	margin-right: 5px;
+}
+
+#footer-menu {
+	position: absolute;
+	top: 5px;
+	left: 100px;
+	color: #cccccc;
+	font-size: 12px;
+}
+
+#footer-menu>ul>li {
+	display: inline-block;
+	padding-left: 10px;
+}
+
+#footer-company-info {
+
+	color: #aaa;
+	font-size: 6px;
+}
+
+#footer-corp{
+	padding-top: 10px;
+}
+
+#footer-box-right {
+	float: right;
+	text-align: right;
+	width: 30%;
+	height: 100%;
+}
+
+#footer-btn {
+	float: right;
+	width: 180px;
+	padding-top:5px;
+}
+
+#footer-signup-btn {
+	width: 180px;
+	height: 42px;
+	background-color: @main-color;
+	color: #fff;
+	font-size: 12px;
+	border: 0;
+}
+
+#footer-sns{
+	float: right;
+	width: 180px;
+	height: 42px;
+	padding-top: 14px;
+	text-align: center;
+}
+
+
+#footer-sns>ul>li {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-left: 12px;
+	color: white;
+	border: solid 1px #fff;
+	border-radius: 15px;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+}
+
+#footer-sns>ul>li:first-child {
+	margin-left: 0px;
+}
+

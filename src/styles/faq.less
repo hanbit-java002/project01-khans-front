@@ -1,0 +1,42 @@
+@import 'lib/include.all.less';
+@import 'common.less';
+
+.faq-tab {
+	margin-bottom: 12px;
+}
+
+.faq-tab>ul>li {
+	display: inline-block;
+	width: 50%;
+	line-height:300%;
+	color: #fff;
+	background-color: #D9D9D9;
+	font-size: 18px;
+	text-align: center;
+	cursor: pointer;
+	border-width: 0 1px;
+	border-style: solid;
+	border-color: #FFF;
+}
+
+.faq-tab>ul>li.active {
+	background-color: @main-color;
+}
+
+.faq-question-list>ul>li {
+	color: #404040;
+	font-size: 13.5px;
+	padding: 14.4px 24px;
+	border: 1px solid #eee;
+	margin-bottom:12px;
+	text-align: left;
+	cursor: pointer;
+}
+
+.faq-question-list>ul>li:last-child {
+	margin-bottom: 0px;
+}
+
+.questions.contract {
+	display: none;
+}
