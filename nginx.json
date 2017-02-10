@@ -6,7 +6,7 @@
 	"statics": [
 		{
 			"location": "/",
-			"root": "/apps/hansuru/dist"
+			"root": "/apps/project01-front/dist"
 		}
 	],
 	"proxys": [
